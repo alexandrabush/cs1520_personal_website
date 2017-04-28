@@ -32,24 +32,26 @@
 				  </ul>
     		</div>
         <!-- Form for user to submit for contacting me -->
+        <form class="form-horizontal" role="form" method="post" action="php/db.php">
    			<div class="col-sm-10" style="padding-top: 20px" >
       			<div class="input-group">
               <span class="input-group-addon" id="basic-addon1">Name</span>
-              <input type="text" class="form-control" placeholder="Jane Doe" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" name="name" placeholder="Jane Doe" aria-describedby="basic-addon1">
             </div>
 
             <div class="input-group">
               <span class="input-group-addon" id="basic-addon1">Email</span>
-              <input type="text" class="form-control" placeholder="email@example.com" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" name="email" placeholder="email@example.com" aria-describedby="basic-addon1">
             </div>
 
             <div class="input-group">
               <span class="input-group-addon" id="basic-addon1">Message</span>
               <input type="text" class="form-control" placeholder="Say hi!" aria-describedby="basic-addon1">
             </div>
-            <button class="btn btn-default" id="sendMessage" type="submit">Submit</button>
+            <button class="btn btn-default" id="sendMessage" name="message" type="submit"">Submit</button>
     		</div>
 		  </div>
+		</form>
   	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
