@@ -1,4 +1,8 @@
 <?php
+	// Add a cookie
+    $cookieUserName= $_POST["name"];
+    setcookie("name", $cookieUserName);
+    
 	if ($_POST){
 		$servername = "localhost";
 		$username = "root";

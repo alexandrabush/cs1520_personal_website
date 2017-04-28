@@ -17,7 +17,21 @@
 	  			<img style="float:left;" src="./images/myface.jpg" class="img-circle" alt="Headshot" width="150" height="150">
 	  		</div>
 	  		<div class="column-md-9" style="padding-left: 200px; padding-top:30px">
+	  		     <?php 
+          			  if(!isset($_COOKIE["name"])) {
+        		 ?>
 	  			<h1> Hi, I'm Alex. It's nice to meet you. </h1>
+	  			
+	  			 <?php
+          		  }
+          		  else{
+        		 ?>
+         	   <h1>
+            	  Hi, I'm Alex. Thanks for stopping by again, <?php echo $_COOKIE["name"]?>.
+           	   </h1>
+        	<?php
+          	  }
+       		 ?>
 	  		</div>
 	   	</div>
       <!-- Navbar and about me section-->
